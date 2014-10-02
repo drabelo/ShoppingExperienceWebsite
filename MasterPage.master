@@ -1,0 +1,46 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="Styles/Main.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            width: 216px;
+            height: 182px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div">
+    <h1 id = "h1">
+        &nbsp;<img alt="" class="style2" src="images/logo.jpg" />lolol</h1>
+    <p id = "links">
+
+    <asp:HyperLink ID="HyperLink1" runat="server" CssClass="hyperlink" 
+                NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+    <asp:HyperLink ID="HyperLink2" runat="server" CssClass="hyperlink" 
+                NavigateUrl="Default.aspx?cat=3">Sports</asp:HyperLink>
+    <asp:HyperLink ID="HyperLink3" runat="server" CssClass="hyperlink" 
+                NavigateUrl="Default.aspx?cat=4">Art</asp:HyperLink>
+    
+    <asp:HyperLink ID="HyperLink4" runat="server" CssClass="hyperlink" 
+                NavigateUrl="Default.aspx?cat=1">Music</asp:HyperLink>
+                    
+    <asp:HyperLink ID="HyperLink5" runat="server" CssClass="hyperlink" 
+                NavigateUrl="Cart.aspx">Cart</asp:HyperLink>
+    
+    </p>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
